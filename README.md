@@ -1,7 +1,7 @@
 # JavaScript
 ## Closures
-Closure is another important concept in JavaScript and understanding this can be really helpful while building javaScript applictions.
-A closure is a combination of a function bundled together with references to its surrounding state(**lexical environment**).
+Closure is another important concept in JavaScript and understanding this can be really helpful while building JavaScript applictions.
+A closure is a combination of a function bundled together with references to its surrounding state (**lexical environment**).
 That is, a closure gives you access to an outer function’s scope from an inner function. All this might sound a bit confusing but it is better understood as you read further.
 
 
