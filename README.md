@@ -12,9 +12,9 @@ var count = 0;//Global Variable
 function counter(){
   count = count + 1;
   return count;
-  console.log(counter()) //outputs 1
-  console.log(counter()) //outputs 2
 }
+console.log(counter()) //outputs 1
+console.log(counter()) //outputs 2
 ```
 It seems to work perfectly and is pretty straight forward. Well, although this might work for this small program but if you wish to write a large piece of code with many people contributing and using the same variable counter, you will surely run into a problem. 
 
