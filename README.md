@@ -50,8 +50,8 @@ console.log(doCount());//outputs 2
 ```
 At first glance, it may not seem obvious that this code still works. In some programming languages, the local variables within a function exist only for the duration of that function's execution. So after makeCounter() is called the variable named count can get destroyed and may no longer be accessible. But in Javascript that's not the case.
 
-This is beacause functions in JavaScript form closures(functions along with the lexical environment). This environment consists of any local variables that were in-scope at the time that the closure was created.
+This is beacause functions in JavaScript form closures (functions along with the lexical environment). This environment consists of any local variables that were in-scope at the time that the closure was created.
 
-In this case when we call makeCounter, it creates a counter function and returns it along with an environment containing the free variable  count (actual reference to the count variable, not a copy). In other words, it creates a closure. The function returned from makeCounter is stored in doCount. So whenever we call doCount it looks for a variable named count in the lexical environment and retrieves its value.
+In this case when we call makeCounter, it creates a counter function and returns it along with an environment containing the free variable 'count' (actual reference to the count variable, not a copy). In other words, it creates a closure. The function returned from makeCounter is stored in doCount. So whenever we call doCount it looks for a variable named count in the lexical environment and retrieves its value.
 
 So this is what basically a closure is. However there are many applications of closures and if you are interested you can read further in  the [documentation](https://developer.mozilla.org/en/docs/Web/JavaScript/Closures)
